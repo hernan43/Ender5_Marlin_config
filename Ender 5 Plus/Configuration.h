@@ -581,7 +581,7 @@
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
-#define HEATER_0_MAXTEMP 400 // new hotend
+#define HEATER_0_MAXTEMP 350 // new hotend
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -627,13 +627,13 @@
     #define DEFAULT_Kd_LIST {  68.38,  68.38 }
   #else
     // ender 5 plus stock hotend
-    //#define DEFAULT_Kp 21.75
-    //#define DEFAULT_Ki 1.94
-    //#define DEFAULT_Kd 60.89
-    // dragonfly BMS
-     #define DEFAULT_Kp 29.94
-     #define DEFAULT_Ki 4.11
-     #define DEFAULT_Kd 54.49
+    //#define DEFAULT_Kp 23.96
+    //#define DEFAULT_Ki 2.25
+    //#define DEFAULT_Kd 63.74
+    // dragonfly BMS P12.19 I0.63 D58.76
+     #define DEFAULT_Kp 12.19
+     #define DEFAULT_Ki 0.63
+     #define DEFAULT_Kd 58.76
   #endif
 #endif
 
@@ -2016,7 +2016,7 @@
 // Preheat Constants - Up to 5 are supported without changes
 //
 #define PREHEAT_1_LABEL       "PLA"
-#define PREHEAT_1_TEMP_HOTEND 200
+#define PREHEAT_1_TEMP_HOTEND 210
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
