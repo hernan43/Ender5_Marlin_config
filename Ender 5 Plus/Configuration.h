@@ -1035,7 +1035,8 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 // E steps example: steps per revolution s=200, microstepping m=16, effective gear diameter d=10.95: sm/(πd) = 93.02
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93.02 }
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 93.02 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 800, 139.04 } // microswiss directdrive
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
